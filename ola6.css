@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    font-family: Arial, Verdana, sans-serif;
+    background: linear-gradient(135deg, #edf2f7 0%, #dbe4ee 100%);
+    color: #1f2937;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 36px auto;
+    background: #ffffff;
+    padding: 36px;
+    border-radius: 18px;
+    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.10);
+    border: 1px solid #dbe3ec;
+}
+
+h1 {
+    margin-top: 0;
+    color: #0f172a;
+    text-align: center;
+    font-size: 2.3rem;
+    letter-spacing: 0.4px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 30px;
+    font-size: 1.05rem;
+}
+
+.action-form,
+.data-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+button {
+    background: linear-gradient(135deg, #1e3a5f, #334e68);
+    color: #ffffff;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 5px 14px rgba(30, 58, 95, 0.18);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(30, 58, 95, 0.22);
+    background: linear-gradient(135deg, #243b53, #486581);
+}
+
+input,
+select {
+    padding: 11px 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 14px;
+    min-width: 220px;
+    background-color: #f8fafc;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.form-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 22px;
+}
+
+.form-card h2,
+.table-wrapper h2 {
+    color: #1e293b;
+    margin-top: 0;
+}
+
+.message {
+    padding: 12px 14px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    border-left: 4px solid transparent;
+}
+
+.message.success {
+    background-color: #ecfdf5;
+    color: #166534;
+    border-left-color: #22c55e;
+}
+
+.message.error {
+    background-color: #fef2f2;
+    color: #991b1b;
+    border-left-color: #dc2626;
+}
+
+.message.info {
+    background-color: #eff6ff;
+    color: #1d4ed8;
+    border-left-color: #2563eb;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 10px;
+    border: 1px solid #e2e8f0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+th,
+td {
+    border: 1px solid #e2e8f0;
+    padding: 11px 13px;
+    text-align: left;
+}
+
+th {
+    background: #1e3a5f;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tr:hover {
+    background-color: #eaf2fb;
+}
+
+.results-section {
+    margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    input,
+    select,
+    button {
+        width: 100%;
+    }
+}
